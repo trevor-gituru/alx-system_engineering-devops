@@ -1,0 +1,6 @@
+# Ignore run script
+*/run.sh
+# Ignore push script
+*/push.sh
+# Ignore create script
+*/r2.sh

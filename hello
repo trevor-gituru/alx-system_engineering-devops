@@ -1,5 +1,0 @@
-# !/bin/bash
-
-# My first code
-echo "Hello world"
-ls

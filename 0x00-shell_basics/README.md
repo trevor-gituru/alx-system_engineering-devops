@@ -74,6 +74,28 @@ lll
 julien@ubuntu:/tmp$ 
 ```
 ## Tasks
+### 0. Where am I?
+Write a script that prints the absolute path name of the current working directory.
+
+**Example:**
+```bash
+$ ./0-current_working_directory
+/root/alx-system_engineering-devops/0x00-shell_basics
+$
+```
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
 ## Resources
 - [What Is “The Shell”?](http://linuxcommand.org/lc3_lts0010.php)
 - [Navigation](http://linuxcommand.org/lc3_lts0020.php)

@@ -83,7 +83,16 @@ $ ./0-current_working_directory
 /root/alx-system_engineering-devops/0x00-shell_basics
 $
 ```
-### 
+### 1. What’s in there?
+Display the contents list of your current directory.
+
+**Example:**
+```bash
+$ ./1-listit
+Applications    Documents   Dropbox Movies Pictures
+Desktop Downloads   Library Music Public
+$
+```
 ### 
 ### 
 ### 

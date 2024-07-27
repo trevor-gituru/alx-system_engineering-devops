@@ -196,8 +196,21 @@ $ file /tmp/my_first_directory
 /tmp/my_first_directory: cannot open `/tmp/my_first_directory' (No such file or directory)
 $
 ```
-### 
-### 
+### 10. Back to the future
+Write a script that changes the working directory to the previous one.
+```bash
+julien@ubuntu:/tmp$ pwd
+/tmp
+julien@ubuntu:/tmp$ cd /var
+julien@ubuntu:/var$ pwd
+/var
+julien@ubuntu:/var$ source ./10-back
+/tmp
+julien@ubuntu:/tmp$ pwd
+/tmp
+```
+### 11. Lists
+Write a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.
 ### 
 ### 
 ## Resources

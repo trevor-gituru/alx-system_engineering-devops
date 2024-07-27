@@ -107,8 +107,35 @@ julien@ubuntu:~$ pwd
 /home/julien
 julien@ubuntu:~$ 
 ```
-### 
-### 
+### 3. The long format
+Display current directory contents in a long format
+
+**Example:**
+```bash
+$ ./3-listfiles
+total 32
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:19 0-current_working_directory
+-rwxr-xr-x@ 1 sylvain staff 19 Jan 25 00:23 1-listit
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:29 2-bring_me_home
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:39 3-listfiles
+$
+```
+### 4. Hidden files
+Display current directory contents, including hidden files (starting with `.`). Use the long format.
+
+**Example:**
+```bash
+$ ./4-listmorefiles
+total 32
+drwxr-xr-x@ 6 sylvain staff 204 Jan 25 00:29 .
+drwxr-xr-x@ 43 sylvain staff 1462 Jan 25 00:19 ..
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:19 0-current_working_directory
+-rwxr-xr-x@ 1 sylvain staff 19 Jan 25 00:23 1-listit
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:29 2-bring_me_home
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:39 3-listfiles
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:41 4-listmorefiles
+$
+```
 ### 
 ### 
 ### 

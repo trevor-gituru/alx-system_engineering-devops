@@ -166,8 +166,26 @@ $ file /tmp/my_first_directory/
 /tmp/my_first_directory/: directory
 $
 ```
-### 
-### 
+### 7. Betty in my first directory
+Move the file betty from `/tmp/` to `/tmp/my_first_directory`.
+
+**Example**:
+```bash
+$ ./7-movethatfile
+$ ls /tmp/my_first_directory/
+betty
+$
+```
+### 8. Bye bye Betty
+Delete the file `betty`.
+
+The file `betty` is in `/tmp/my_first_directory`
+**Example:**
+```bash
+$ ./8-firstdelete
+$ ls /tmp/my_first_directory/
+$
+```
 ### 
 ### 
 ### 

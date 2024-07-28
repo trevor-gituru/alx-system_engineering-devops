@@ -145,7 +145,18 @@ $ ./5-firstlines
 ##
 $
 ```
-### 
+### 6. Line #2
+Write a script that displays the third line of the file `iacta`.
+
+The file `iacta` will be in the working directory
+
+You’re not allowed to use `sed`
+```bash
+julien@ubuntu:/tmp/h$ ./6-third_line 
+Alea iacta est ("The die is cast") is a Latin phrase attributed by Suetonius
+julien@ubuntu:/tmp/h$
+``` 
+**Note:**The output will differ, depending on the content of the file iacta.
 ### 
 ### 
 ### 

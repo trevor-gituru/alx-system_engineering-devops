@@ -150,14 +150,27 @@ Write a script that displays the third line of the file `iacta`.
 
 The file `iacta` will be in the working directory
 
-You’re not allowed to use `sed`
+- You’re not allowed to use `sed`
 ```bash
 julien@ubuntu:/tmp/h$ ./6-third_line 
 Alea iacta est ("The die is cast") is a Latin phrase attributed by Suetonius
 julien@ubuntu:/tmp/h$
 ``` 
 **Note:**The output will differ, depending on the content of the file iacta.
-### 
+### 7. It is a good file that cuts iron without making a noise
+Write a shell script that creates a file named exactly `\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)` containing the text `Best School` ending by a new line.
+```bash
+julien@ubuntu:~/shell$ ls && ./7-file && ls -l && cat -e \\*
+0-mac_and_cheese 7-file 7-file~ Makefile
+total 20
+-rwxrw-r-- 1 julien julien 79 Jan 20 06:24 0-mac_and_cheese
+-rwxrw-r-- 1 julien julien 90 Jan 20 06:40 7-file
+-rwxrw-r-- 1 julien julien 69 Jan 20 06:37 7-file~
+-rw-rw-r-- 1 julien julien 14 Jan 20 06:38 Makefile
+-rw-rw-r-- 1 julien julien 17 Jan 20 06:40 '\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)'
+Best School$
+julien@ubuntu:~/shell$
+```
 ### 
 ### 
 ### 

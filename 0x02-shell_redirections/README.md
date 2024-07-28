@@ -389,8 +389,38 @@ $ ./15-countthatword
 81
 $ 
 ```
-### 
-### 
+### 16. What's next?
+Display lines containing the pattern “root” and 3 lines after them in the file `/etc/passwd`.
+```bash
+$ ./16-whatsnext
+root:*:0:0:System Administrator:/var/root:/bin/sh
+daemon:*:1:1:System Services:/var/root:/usr/bin/false
+_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico
+_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false
+_networkd:*:24:24:Network Services:/var/networkd:/usr/bin/false
+--
+_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
+_usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false
+_dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false
+_dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false
+$
+```
+### 17. I hate bins
+Display all the lines in the file `/etc/passwd` that do not contain the pattern `bin`.
+```bash
+$ ./17-hidethisword
+##
+# User Database
+#
+# Note that this file is consulted directly only when the system is running
+# in single-user mode. At other times this information is provided by
+# Open Directory.
+#
+# See the opendirectoryd(8) man page for additional information about
+# Open Directory.
+##
+$
+```
 ### 
 ### 
 ### 

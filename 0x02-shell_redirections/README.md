@@ -382,7 +382,13 @@ daemon:*:1:1:System Services:/var/root:/usr/bin/false
 _cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
 $
 ```
-### 
+### 15. Count that word
+Display the number of lines that contain the pattern “bin” in the file /etc/passwd
+```bash
+$ ./15-countthatword
+81
+$ 
+```
 ### 
 ### 
 ### 

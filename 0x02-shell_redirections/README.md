@@ -459,7 +459,7 @@ julien@ubuntu:/tmp/0x02$
 
 ### 22. DJ Cut Killer
 Write a script that displays all users and their home directories, sorted by users.
-
+list
 - Based on the the `/etc/passwd` file
 ```bash
 julien@ubuntu:/tmp/0x02$ cat /etc/passwd

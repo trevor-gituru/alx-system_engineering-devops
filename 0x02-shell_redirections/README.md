@@ -448,8 +448,14 @@ julien@ubuntu:/tmp/0x02$ echo Chicago | ./20-hiago
 hiago
 julien@ubuntu:/tmp/0x02$ 
 ```
-### 
 
+# 21. esreveR
+Write a script that reverse its input.
+```bash
+julien@ubuntu:/tmp/0x02$ echo "Reverse" | ./21-reverse 
+esreveR
+julien@ubuntu:/tmp/0x02$ 
+```
 ## Resources
 - [Shell, I/O Redirection](http://linuxcommand.org/lc3_lts0070.php)
 - [Special Characters](https://mywiki.wooledge.org/BashGuide/SpecialCharacters)

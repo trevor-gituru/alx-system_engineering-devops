@@ -41,7 +41,13 @@ julien@ubuntu:/tmp/h$ ./0-hello_world | cat -e
 Hello, World$
 julien@ubuntu:/tmp/h$ 
 ```
-### 
+### 1. Confused smiley
+Write a script that displays a confused smiley `"(Ôo)'`.
+```bash
+julien@ubuntu:/tmp/h$ ./1-confused_smiley 
+"(Ôo)'
+julien@ubuntu:/tmp/h$ 
+``` 
 ### 
 ### 
 ### 

@@ -32,6 +32,37 @@
 - What is the `/etc/shadow` file and what is its format
 
 ## Tasks
+### 0. Hello World
+Write a script that prints “Hello, World”, followed by a new line to the standard output.
+```bash
+julien@ubuntu:/tmp/h$ ./0-hello_world 
+Hello, World
+julien@ubuntu:/tmp/h$ ./0-hello_world | cat -e
+Hello, World$
+julien@ubuntu:/tmp/h$ 
+```
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+
 ## Resources
 - [Shell, I/O Redirection](http://linuxcommand.org/lc3_lts0070.php)
 - [Special Characters](https://mywiki.wooledge.org/BashGuide/SpecialCharacters)

@@ -153,7 +153,13 @@ Create a script that creates a new local variable.
 ```bash
 julien@ubuntu:/tmp/0x03$ source 6-create_local_variable
 ```
-### 
+### 7. Global variable
+Create a script that creates a new global variable.
+- Name: `BEST`
+- Value: `School`
+```bash
+julien@ubuntu:/tmp/0x03$ source 6-create_local_variable
+```
 ### 
 ### 
 ### 

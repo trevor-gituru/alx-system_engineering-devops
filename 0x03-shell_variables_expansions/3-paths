@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 13
+echo $(( $(echo $PATH | grep -e "[[:lower:]]:" -o | wc -l) + 1 ))

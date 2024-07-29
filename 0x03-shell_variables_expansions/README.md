@@ -145,7 +145,14 @@ DESKTOP_SESSION=ubuntu
 [...]
 julien@ubuntu:/tmp/0x03$ 
 ```
-### 
+### 6. Local variable
+Create a script that creates a new local variable.
+
+- Name: `BEST`
+- Value: `School`
+```bash
+julien@ubuntu:/tmp/0x03$ source 6-create_local_variable
+```
 ### 
 ### 
 ### 

@@ -158,9 +158,16 @@ Create a script that creates a new global variable.
 - Name: `BEST`
 - Value: `School`
 ```bash
-julien@ubuntu:/tmp/0x03$ source 6-create_local_variable
+julien@ubuntu:/tmp/0x03$ . ./7-create_global_variable
 ```
-### 
+### 8. Every addition to true knowledge is an addition to human power
+Write a script that prints the result of the addition of `128` with the value stored in the environment variable `TRUEKNOWLEDGE`, followed by a new line.
+```bash
+julien@production-503e7013:~$ export TRUEKNOWLEDGE=1209
+julien@production-503e7013:~$ ./8-true_knowledge | cat -e
+1337$
+julien@production-503e7013:~$
+```
 ### 
 ### 
 ### 

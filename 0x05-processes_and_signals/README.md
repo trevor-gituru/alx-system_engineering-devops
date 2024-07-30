@@ -87,13 +87,14 @@ sylvain   4404  0.0  0.7  21432  4000 pts/0    Ss   03:32   0:00          \_ -ba
 sylvain   4477  0.0  0.2  11120  1352 pts/0    S+   03:40   0:00              \_ bash ./2-show_your_bash_PID
 sylvain   4479  0.0  0.1  10460   912 pts/0    S+   03:40   0:00                  \_ grep bash
 sylvain@ubuntu$ 
+```
 Here we can see that my Bash PID is `4404`.
 ### 3. Show your Bash PID made easy
 Write a Bash script that displays the PID, along with the process name, of processes whose name contain the word `bash`.
 
 **Requirements:**
 
-- You cannot use ps
+- You cannot use `ps`
 ```bash
 sylvain@ubuntu$ ./3-show_your_bash_pid_made_easy
 4404 bash
@@ -108,7 +109,23 @@ Here we can see that:
 - For the first iteration: bash `PID` is `4404` and that the `3-show_your_bash_pid_made_easy` script PID is `4555`
 - For the second iteration: bash `PID` is `4404` and that the `3-show_your_bash_pid_made_easy` script PID is `4557`
 
-### 
+### 4. To infinity and beyond
+mandatory
+Score: 0.0% (Checks completed: 0.0%)
+Write a Bash script that displays To infinity and beyond indefinitely.
+
+Requirements:
+
+In between each iteration of the loop, add a sleep 2
+sylvain@ubuntu$ ./4-to_infinity_and_beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+^C
+sylvain@ubuntu$ 
+Note that I ctrl+c (killed) the Bash script in the example.
 ### 
 ### 
 ### 

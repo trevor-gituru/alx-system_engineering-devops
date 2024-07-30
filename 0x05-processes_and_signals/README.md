@@ -224,12 +224,10 @@ I started `7-highlander` in Terminal #0 and then run `67-stop_me_if_you_can` in 
 
 
 ### 8. Beheaded process
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Write a Bash script that kills the process 7-highlander.
+Write a Bash script that kills the process `7-highlander`.
 
-Terminal #0
-
+**Terminal #0**
+```bash
 sylvain@ubuntu$ ./7-highlander 
 To infinity and beyond
 To infinity and beyond
@@ -237,11 +235,13 @@ To infinity and beyond
 To infinity and beyond
 Killed
 sylvain@ubuntu$ 
-Terminal #1
-
+```
+**Terminal #1**
+```bash
 sylvain@ubuntu$ ./8-beheaded_process
 sylvain@ubuntu$ 
-I started 7-highlander in Terminal #0 and then run 8-beheaded_process in terminal #1 and we can see that the 7-highlander has been killed.
+```
+I started 7-highlander in Terminal #0 and then run `8-beheaded_process` in terminal #1 and we can see that the `7-highlander` has been killed.
 ## Resources
 - [Linux PID](https://www.linfo.org/pid.html)
 - [Linux process](https://www.thegeekstuff.com/2012/03/linux-processes-environment/)

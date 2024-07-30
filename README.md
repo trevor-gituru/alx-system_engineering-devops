@@ -6,6 +6,8 @@
 - 0x02. Shell, I/O Redirections and filters(**Left with 4 advanced tasks, 23 - 26**)
 - 0x03. Shell, init files, variables and expansions(**Left with 4 advanced tasks, 14 - 16**)
 - 0x04. Loops, conditions and parsing(**Left with 4 advanced tasks, 11 - 14**)
+- 0x05. Processes and signals(**Left with 3 advanced tasks, 9 - 11**)
+
 
 ## Requirements
 ### Bash 

@@ -4,6 +4,9 @@
 - 0x00. Shell, basics(**Left with 5 advanced tasks, 15 - 20**)
 - 0x01. Shell, permissions(**Left with 4 advanced tasks, 13 - 16**)
 - 0x02. Shell, I/O Redirections and filters(**Left with 4 advanced tasks, 23 - 26**)
+- 0x03. Shell, init files, variables and expansions(**Left with 4 advanced tasks, 14 - 16**)
+- 0x04. Loops, conditions and parsing(**Left with 4 advanced tasks, 11 - 14**)
+
 ## Requirements
 ### Bash 
 - Allowed editors: `vi`, `vim`, `emacs`

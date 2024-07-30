@@ -349,7 +349,40 @@ school file exists
 school file is not empty
 sylvain@ubuntu$ 
 ```
-### 
+### 10. FizzBuzz
+Write a Bash script that displays numbers from `1` to `100`.
+
+**Requirements:**
+
+- Displays `FizzBuzz` when the number is a multiple of 3 and 5
+- Displays `Fizz` when the number is multiple of 3
+- Displays `Buzz` when the number is a multiple of 5
+- Otherwise, displays the number
+In a list format
+```bash
+sylvain@ubuntu$ ./10-fizzbuzz | head -20
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+16
+17
+Fizz
+19
+Buzz
+sylvain@ubuntu$ 
+```
 ## Resources
 - [Loops sample](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_01.html)
 - [Variable assignment and arithmetic](https://tldp.org/LDP/abs/html/ops.html)

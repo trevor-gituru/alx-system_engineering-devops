@@ -102,7 +102,41 @@ h8n$
 sylvain@ubuntu$
 $
 ```
-### 
+### 6. Call me maybe
+This task is brought to you by a professional advisor [Neha Jain](https://x.com/_nehajain), Senior Software Engineer at LinkedIn.
+
+**Requirement:**
+
+- The regular expression must match a 10 digit phone number
+**Example:**
+```bash
+sylvain@ubuntu$ ./6-phone_number.rb 4155049898 | cat -e
+4155049898$
+sylvain@ubuntu$ ./6-phone_number.rb " 4155049898" | cat -e
+$
+sylvain@ubuntu$ ./6-phone_number.rb "415 504 9898" | cat -e
+$
+sylvain@ubuntu$ ./6-phone_number.rb "415-504-9898" | cat -e
+$
+sylvain@ubuntu$
+```
+### 7. OMG WHY ARE YOU SHOUTING?
+
+![regex](https://intranet.alxswe.com/images/contents/sysadmin/projects/78/shouting.jpg)
+
+**Requirement:**
+
+- The regular expression must be only matching: capital letters
+**Example:**
+```bash
+sylvain@ubuntu$ ./7-OMG_WHY_ARE_YOU_SHOUTING.rb "I realLy hOpe VancouvEr posseSs Yummy Soft vAnilla Dupper Mint Ice Nutella cream" | cat -e
+ILOVESYSADMIN$
+sylvain@ubuntu$ ./7-OMG_WHY_ARE_YOU_SHOUTING.rb "WHAT do you SAY?" | cat -e
+WHATSAY$
+sylvain@ubuntu$ ./7-OMG_WHY_ARE_YOU_SHOUTING.rb "cannot read you" | cat -e
+$
+sylvain@ubuntu$
+```
 ## Resources
 - [Regular expressions - basics](https://www.slideshare.net/slideshow/introducing-regular-expressions/63676155#7)
 - [Regular expressions - advanced](https://www.slideshare.net/slideshow/advanced-regular-expressions-80296518/80296518#3)

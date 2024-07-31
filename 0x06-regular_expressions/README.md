@@ -33,7 +33,14 @@ SchoolSchool$
 sylvain@ubuntu$ ./0-simply_match_school.rb "Grace Hopper" | cat -e
 $
 ```
-### 
+### 1. Repetition Token #0
+
+![regex](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/e7db3c377d46453588fc84f3a975661d142fee91.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240731T110142Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c88dbf0fe23b4e785d7c98d04a0c6678f81127c88b5a782eadc4ce05c88a89d8)
+
+**Requirements:**
+
+- Find the regular expression that will match the above cases
+- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 ### 
 ### 
 ### 

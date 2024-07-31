@@ -41,6 +41,10 @@ $
 
 - Find the regular expression that will match the above cases
 - Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+```bash
+razaoul@ubuntu$ ./1-repetition_token_0.rb hbttn
+hbttn
+```
 ### 
 ### 
 ### 

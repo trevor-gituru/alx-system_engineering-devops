@@ -71,7 +71,20 @@ razaoul@ubuntu$ ./3-repetition_token_2.rb hbn hbtn
 hbtn
 ```
 
-### 
+### 4. Repetition Token #3
+
+![regex text](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/f8dbcb9cf5ae569a8645027dc46e81cb372ce28e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240731T110142Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=5a99742eaffe8b3be0e156b8323254ba1ac353782fa3dd2c7e58aa7c9b48240c)
+
+**Requirements:**
+
+- Find the regular expression that will match the above cases
+- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+- Your regex should not contain square brackets
+```bash
+razaoul@ubuntu$ ./3-repetition_token_2.rb hbn hbtn
+hbtn
+```
+
 ### 
 ### 
 ## Resources

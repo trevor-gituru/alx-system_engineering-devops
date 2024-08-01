@@ -97,7 +97,23 @@ What network do you use when you browse www.google.com from your smartphone (not
 1. Internet
 2. WAN
 3. LAN
-### 
+### 2. MAC and IP address
+
+![MAC](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/1e348ba3bcbb094b02922f821ffeb3d8c5438b7b.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240801T090934Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=479f19ccf63e1b91920d3e0ac7f241a73c233d6a368241b91a9cce3d19e3f348)
+
+**Questions:**
+
+What is a MAC address?
+
+1. The name of a network interface
+2. The unique identifier of a network interface
+3. A network interface
+
+What is an IP address?
+
+1. Is to devices connected to a network what postal address is to houses
+2. The unique identifier of a network interface
+3. Is a number that network devices use to connect to networks
 ### 
 ### 
 ### 

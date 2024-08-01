@@ -9,6 +9,8 @@
 - 0x05. Processes and signals(**Left with 3 advanced tasks, 9 - 11**)
 ### Scripting
 - 0x06. Regular expression(**Left with 1 advanced tasks 8**)
+### Networking
+- 0x07. Networking basics #0(**Finished mandatory tasks 0 - 5**)
 
 
 ## Requirements

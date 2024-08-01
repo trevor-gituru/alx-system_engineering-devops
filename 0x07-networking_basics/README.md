@@ -42,6 +42,44 @@ sylvain@ubuntu$
 ```
 Source for question 1 [here](https://x.com/devopsreact/status/831922429215662080)
 ## Tasks
+### 0. OSI model
+|OSI (Open Systems Interconnection) is an abstract model to describe layered communication and computer network design. The idea is to segregate the different parts of what make communication possible.
+
+It is organized from the lowest level to the highest level:
+
+- The lowest level: layer 1 which is for transmission on physical layers with electrical impulse, light or radio signal
+- The highest level: layer 7 which is for application specific communication like SNMP for emails, HTTP for your web browser, etc
+Keep in mind that the OSI model is a concept, it’s not even tangible. The OSI model doesn’t perform any functions in the networking process. It is a conceptual framework so we can better understand complex interactions that are happening. Most of the functionality in the OSI model exists in all communications systems.
+
+![OSI model](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/4e6a0ad87a65d7054248.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240801T090934Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=11ca5c8ddb2d11de667c219aab15bcbd074e674275a01cf22cd33899128261ab)
+
+In this project we will mainly focus on:
+
+- The Transport layer and especially TCP/UDP
+- On the Network layer with IP and ICMP
+The image bellow describes more concretely how you can relate to every level.
+
+![OSI model](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/0fc96bd99faa7941b18bcae4c5f90c6acd11791d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240801T090934Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=20fa36d36bbbdb88ee388017e3375d20c965ade5c0266f8292bc0e5d4c522917)
+
+**Questions:**
+
+What is the OSI model?
+
+1. Set of specifications that network hardware manufacturers must respect
+2. The OSI model is a conceptual model that characterizes the communication functions of a telecommunication system without regard to their underlying internal structure and technology
+3. The OSI model is a model that characterizes the communication functions of a telecommunication system with a strong regard for their underlying internal structure and technology
+
+How is the OSI model organized?
+
+1. Alphabetically
+2. From the lowest to the highest level
+3. Randomly
+### 
+### 
+### 
+### 
+### 
+### 
 ## Requirements
 - Allowed editors: `vi`, `vim`, `emacs`
 - All your Bash script files will be interpreted on Ubuntu 20.04 LTS

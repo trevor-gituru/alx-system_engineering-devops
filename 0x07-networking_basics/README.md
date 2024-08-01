@@ -74,7 +74,29 @@ How is the OSI model organized?
 1. Alphabetically
 2. From the lowest to the highest level
 3. Randomly
-### 
+### 1. Types of network
+
+![WAN](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/4b995d4f8078b44afa968d68a98035d2bd7e8fac.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240801T090934Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=69456c5a953fd0b91246289d0e7ba4e62f17c3cbea7dc4e6993d79adeb3a18d9)
+
+LAN connect local devices together, WAN connects LANs together, and WANs are operating over the Internet.
+
+**Questions:**
+
+What type of network a computer in local is connected to?
+
+1. Internet
+2. WAN
+3. LAN
+What type of network could connect an office in one building to another office in a building a few streets away?
+
+1. Internet
+2. WAN
+3. LAN
+What network do you use when you browse www.google.com from your smartphone (not connected to the Wifi)?
+
+1. Internet
+2. WAN
+3. LAN
 ### 
 ### 
 ### 

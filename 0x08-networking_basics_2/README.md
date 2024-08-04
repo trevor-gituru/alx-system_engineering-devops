@@ -18,9 +18,9 @@ Write a Bash script that configures an Ubuntu server with the below requirements
 
 - `localhost` resolves to `127.0.0.2`
 - `facebook.com` resolves to `8.8.8.8`.
-- The checker is running on Docker, so make sure to read [this]()
+- The checker is running on Docker, so make sure to read [this](http://blog.jonathanargentiero.com/docker-sed-cannot-rename-etcsedl8ysxl-device-or-resource-busy/)
 **Example:**
-
+```bash
 sylvain@ubuntu$ ping localhost
 PING localhost (127.0.0.1) 56(84) bytes of data.
 64 bytes from localhost (127.0.0.1): icmp_seq=1 ttl=64 time=0.012 ms
@@ -55,11 +55,12 @@ PING facebook.com (8.8.8.8) 56(84) bytes of data.
 --- facebook.com ping statistics ---
 1 packets transmitted, 1 received, 0% packet loss, time 0ms
 rtt min/avg/max/mdev = 8.065/8.065/8.065/0.000 ms
+```
 In this example we can see that:
 
-before running the script, localhost resolves to 127.0.0.1 and facebook.com resolves to 157.240.11.35
-after running the script, localhost resolves to 127.0.0.2 and facebook.com resolves to 8.8.8.8
-If you’re running this script on a machine that you’ll continue to use, be sure to revert localhost to 127.0.0.1. Otherwise, a lot of things will stop working!
+- before running the script, `localhost` resolves to `127.0.0.1` and `facebook.com` resolves to `157.240.11.35`
+- after running the script, `localhost` resolves to `127.0.0.2` and facebook.com resolves to `8.8.8.8`
+If you’re running this script on a machine that you’ll continue to use, be sure to revert localhost to `127.0.0.1`. Otherwise, a lot of things will stop working!
 ### 
 ## Requirements
 - Allowed editors: `vi`, `vim`, `emacs`

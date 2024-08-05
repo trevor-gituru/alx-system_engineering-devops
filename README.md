@@ -12,7 +12,8 @@
 ### Networking
 - 0x07. Networking basics #0(**Finished mandatory tasks 0 - 5**)
 - 0x08. Networking basics #1(**Left with 1 advanced tasks, 2**)
-
+### CI/CD
+- 0x0A. Configuration management(**Finished all tasks, 0-2 mandatory tasks**)
 
 ## Requirements
 ### Bash 

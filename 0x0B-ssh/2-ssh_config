@@ -1,0 +1,5 @@
+# Task 2
+Host school
+    User ubuntu
+    HostName 52.2.61.165
+    IdentityFile ~/.ssh/school

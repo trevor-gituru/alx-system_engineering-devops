@@ -6,3 +6,4 @@
 - [Root and sub domain](https://landingi.com/help/domains-vs-subdomains/)
 - [Child process](https://intranet.alxswe.com/concepts/110)
 - [How the web works](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
+- [Nginx](https://en.wikipedia.org/wiki/Nginx)

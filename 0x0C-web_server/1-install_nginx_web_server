@@ -1,7 +1,20 @@
 #!/usr/bin/env bash
 # Task 0
-apt-get -y install nginx
-sed -i -E 's/^[[:space:]]+listen [0-9]+/\tlisten 80/g' /etc/nginx/sites-available/default
-sed -i -E 's/^\s+index .*/\tindex hello.html;/g' /etc/nginx/sites-available/default
-echo "Hello World!" > /var/www/html/hello.html;
-nginx -s reload
+#!/usr/bin/env bash
+# installing nginx
+
+# updating and installing
+sudo apt-get -y update
+sudo apt-get -y install nginx
+
+# adding firewall
+sudo ufw allow 'Nginx HTTP'
+
+# Creating an index.html page with a string
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+# Checking configurations for Syntax errors
+sudo nginx -t
+
+# Restarting nginx service
+sudo service nginx restart

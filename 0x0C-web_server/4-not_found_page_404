@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# Task 4
+# updating and installing
+sudo apt-get -y update
+sudo apt-get -y install nginx
+
+# adding firewall
+sudo ufw allow 'Nginx HTTP'
+
+# Creating an index.html page with a string
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+# Checking configurations for Syntax errors
+sudo nginx -t
+
+# Restarting nginx service
+sudo service nginx restart
+
+lines="\n\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}"
+
+if  ! grep -q -e "redirect_me" /etc/nginx/sites-available/default 
+then
+    sed -i "s|server_name _;|server_name _;${lines}|g" /etc/nginx/sites-available/default
+    sudo service nginx restart
+fi
+
+echo "Ceci n'est pas une page" > /var/www/html/e404.html
+
+if ! grep -q 'e404.html' /etc/nginx/sites-available/default
+then
+    sed -i "s|server_name _;|server_name _;\n\terror_page 404 /e404.html;\n|g" /etc/nginx/sites-available/default
+    service nginx restart
+fi

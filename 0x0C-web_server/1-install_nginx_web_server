@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Task 0
+apt-get -y install nginx
+sed -i -E 's/^[[:space:]]+listen [0-9]+/\tlisten 80/g' /etc/nginx/sites-available/default
+sed -i -E 's/^\s+index .*/\tindex hello.html;/g' /etc/nginx/sites-available/default
+echo "Hello World!" > /var/www/html/hello.html;
+nginx -s reload

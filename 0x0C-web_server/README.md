@@ -13,3 +13,4 @@
 - [HTTP Status Code](https://www.tutorialspoint.com/http/http_status_codes.htm)
 - [HTTP requests](https://www.tutorialspoint.com/http/http_requests.htm)
 - [HTTP Redirect](https://moz.com/learn/seo/redirection)
+- [Not found HTTP response code](https://en.wikipedia.org/wiki/HTTP_404)

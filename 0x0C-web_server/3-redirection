@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Task 3
+lines="\n\tlocation /redirect_me/ {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}"
+sed -i "s|server_name _;|server_name _;${lines}|g" /etc/nginx/sites-available/default
+sudo service nginx restart

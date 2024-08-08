@@ -12,3 +12,4 @@
 - [Configuring Nginx](https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04)
 - [HTTP Status Code](https://www.tutorialspoint.com/http/http_status_codes.htm)
 - [HTTP requests](https://www.tutorialspoint.com/http/http_requests.htm)
+- [HTTP Redirect](https://moz.com/learn/seo/redirection)

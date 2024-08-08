@@ -138,7 +138,65 @@ If things are not going as expected, make sure to check out Nginx logs, they can
 sylvain@ubuntu$ sudo su
 root@ubuntu#
 ```
-### 
+### 2. Setup a domain name
+[.TECH](https://get.tech/) Domains is one of the top domain providers. They are known for the stability and quality of their DNS hosting solution. We partnered with .TECH Domains so that you can learn about DNS.
+
+**YOU** can have a **free .tech domain** for 1 year by following these steps:
+
+- Access the tools space
+- Unlock the GitHub student pack: **WARNING** - this invitation link is unique to you and can’t be reclaimed! If you have any issue, please contact GitHub education support
+
+
+- When registered, access your benefits:
+
+
+And scroll to **.Tech domain:**
+
+
+- Start to register your domain and checkout
+- At the Checkout step, please click on “Login with GitHub”:
+ 
+
+- The cost of the domain should be now at $0
+- You can finalize it by creating an account in [.Tech](https://get.tech/) domains
+- And manage your domain there!
+Provide the domain name in your answer file.
+
+Requirement:
+
+- provide the domain name only (example: `foobar.tech`), no subdomain (example: `www.foobar.tech`)
+- configure your DNS records with an A entry so that your root domain points to your `web-01` IP address **Warning: the propagation of your records can take time (~1-2 hours)**
+- go to your profile and enter your domain in the `Project website url` field
+
+**Example:**
+```bash
+sylvain@ubuntu$ cat 2-setup_a_domain_name
+myschool.tech
+sylvain@ubuntu$
+sylvain@ubuntu$ dig myschool.tech
+
+; <<>> DiG 9.10.6 <<>> myschool.tech
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 26785
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;myschool.tech.     IN  A
+
+;; ANSWER SECTION:
+myschool.tech.  7199    IN  A   184.72.193.201
+
+;; Query time: 65 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Fri Aug 02 09:44:36 PDT 2019
+;; MSG SIZE  rcvd: 65
+
+sylvain@ubuntu$
+```
+When your domain name is setup, please verify the Registrar here: https://whois.whoisxmlapi.com/ and you must see in the JSON response: `"registrarName": "Dotserve Inc"` 
 ### 
 ### 
 ### 

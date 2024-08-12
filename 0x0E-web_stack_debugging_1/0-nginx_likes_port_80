@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # Task 0
+systemctl stop nginx
+apt-get purge nginx
 apt-get update
 apt-get install -y nginx
 service nginx start

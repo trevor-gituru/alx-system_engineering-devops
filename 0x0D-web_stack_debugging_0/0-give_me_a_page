@@ -3,4 +3,5 @@
 apt-get update
 apt-get install -y apache2
 service apache2 start
+# Set up the dedault index page
 echo "Hello Holberton" > /var/www/html/index.html

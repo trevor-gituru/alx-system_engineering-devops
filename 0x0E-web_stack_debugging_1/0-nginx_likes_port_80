@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 # Task 0
-systemctl stop nginx
-apt-get purge nginx
-rm -rf /var/www/html /etc/nginx
-apt-get update
-apt-get install -y nginx
-service nginx start
+# Automating my fix by ensuring nginx listens on port 80
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Task 0
-docker exec 47ca3994a491 sh -c 'apt-get update'
-docker exec 47ca3994a491 sh -c 'apt-get install -y apache2'
-docker exec 47ca3994a491 sh -c 'service apache2 start'
-docker exec 47ca3994a491 sh -c 'echo "Hello Holberton" > /var/www/html/index.html'
+apt-get update
+apt-get install -y apache2
+service apache2 start
+echo "Hello Holberton" > /var/www/html/index.html

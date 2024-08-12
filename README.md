@@ -18,7 +18,8 @@
 - 0x0B. SSH(**Left with 1 advanced tasks, 4**)
 ### CI/CD
 - 0x0A. Configuration management(**Finished all tasks, 0-2 mandatory tasks**)
-
+### Web Stack Debugging
+- 0x0D. Web stack debugging #0(**Finished all tasks, 1 mandatory tasks**)
 ## Requirements
 ### Bash 
 - Allowed editors: `vi`, `vim`, `emacs`

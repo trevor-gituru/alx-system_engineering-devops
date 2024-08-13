@@ -38,7 +38,8 @@ fi
 
 # Add custom header
 if ! grep -q 'X-Served-By' "$default"
+header="\tadd_header X-Served-By \"$(hostname)\";"
 then
-    sed -i "/server_name .*;/a\\\tadd_header X-Served-By \"$(hostname)\";" "$default"
+    sed -i "/server_name .*;/a\\$header" "$default"
     service nginx restart
 fi

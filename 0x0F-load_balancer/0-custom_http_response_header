@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+# Task 0
+
+# updating and installing
+sudo apt-get -y update
+sudo apt-get -y install nginx
+
+# adding firewall
+sudo ufw allow 'Nginx HTTP'
+
+# Creating an index.html page with a string
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+# Checking configurations for Syntax errors
+sudo nginx -t
+
+# Restarting nginx service
+sudo service nginx restart
+
+# Add Redirect
+default='/etc/nginx/sites-available/default'
+lines="\n\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}"
+
+if  ! grep -q -e "redirect_me" "$default" 
+then
+    sed -i "s|server_name _;|server_name _;${lines}|g" "$default"
+    sudo service nginx restart
+fi
+# Create error page
+
+echo "Ceci n'est pas une page" > /var/www/html/e404.html
+
+if ! grep -q 'e404.html' "$default"
+then
+    sed -i "s|server_name _;|server_name _;\n\terror_page 404 /e404.html;\n|g" "$default"
+    service nginx restart
+fi
+
+# Add custom header
+if ! grep -q 'X-Served-By' "$default"
+then
+    sed -i "/server_name .*;/a\\\tadd_header X-Served-By \"$(hostname)\";" "$default"
+    service nginx restart
+fi

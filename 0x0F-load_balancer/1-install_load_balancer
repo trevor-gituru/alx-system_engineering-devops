@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Task 1
+
+# Update and install haproxy
+sudo apt-get update
+sudo apt-get install -y haproxy
+
+# Change to layer 4 load balancing
+ro='/etc/haproxy/haproxy.cfg'
+cp "$ro" "$ro".bkp
+sed -i "s/[^\.]http/\ttcp/g" $ro 
+
+front="# Enter frontend config\nfrontend tcp_front\n\tbind *:80\n\tdefault_backend servers"
+
+back="# Backend configuration\nbackend servers\n\tbalance roundrobin\n\tserver server1 52.2.61.165:80 check\n\tserver server2 54.237.24.148:80 check"
+
+sudo echo -e "$front" | sudo tee -a "$ro"
+sudo echo -e "$back" | sudo tee -a "$ro"
+
+sudo service haproxy reload

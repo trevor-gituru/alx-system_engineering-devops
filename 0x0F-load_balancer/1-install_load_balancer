@@ -1,33 +1,23 @@
 #!/usr/bin/env bash
-# This script installs and configures HAProxy on lb-01 server
+# Installs and setup haproxy
 
-# Update package index to get the latest versions available
-sudo apt -y update
+apt-get install -y software-properties-common
+add-apt-repository -y ppa:vbernat/haproxy-1.8
+apt-get -y update
+apt-get install -y haproxy=1.8.\*
 
-# Install HAProxy
-sudo apt -y install haproxy
+echo "ENABLED=1" > /etc/default/haproxy
 
-# Start HAProxy service
-sudo service haproxy start
+# Listen to web1 and web2 servers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+echo "
+   listen load_balancer
+   bind *:80
+   mode http
+   balance roundrobin
+   option httpclose
+   option forwardfor
+   server 17272-web-01 44.200.83.158:80 check
+   server 17272-web-02 3.237.16.226:80 check
+" >> /etc/haproxy/haproxy.cfg
 
-# Enable HAProxy service to start on system boot
-sudo service haproxy enable
-
-# Define the configurations for HAProxy
-configurations="
-frontend load_balancer
-    bind *:80
-    mode http
-    default_backend app_servers
-
-backend app_servers
-    balance roundrobin
-    server 437785-web-01 18.209.179.165:80 check
-    server 437785-web-02 52.91.117.26:80 check
-"
-
-# Append configurations to HAProxy configuration file
-echo "$configurations" | sudo tee -a /etc/haproxy/haproxy.cfg
-
-# Restart HAProxy service to apply new configurations
-sudo service haproxy restart
+service haproxy start

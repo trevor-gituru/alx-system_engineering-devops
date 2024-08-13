@@ -14,6 +14,8 @@
 - 0x08. Networking basics #1(**Left with 1 advanced tasks, 2**)
 ### Web Stack
 - 0x0C. Web server(**Left with 1 advanced tasks, 5**)
+- 0x0F. Load balancer(**Left with 1 advanced tasks, 2**)
+
 ### Security
 - 0x0B. SSH(**Left with 1 advanced tasks, 4**)
 ### CI/CD

@@ -8,7 +8,7 @@ What happens when you don’t secure your website traffic?
 ## Tasks
 ## Resources
 - [What is HTTPS?](https://www.instantssl.com/http-vs-https)
-- [What are the 2 main elements that SSL is providing]()
+- [What are the 2 main elements that SSL is providing](https://www.sslshopper.com/why-ssl-the-purpose-of-using-ssl-certificates.html)
 - [HAProxy SSL termination on Ubuntu16.04]()
 - [SSL termination]()
 - [Bash function]()

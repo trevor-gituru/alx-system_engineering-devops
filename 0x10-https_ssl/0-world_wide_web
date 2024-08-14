@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Task 0
+subdomain_info ()
+{
+    domain="$2.$1"
+    sub="$2"
+    read record dest <<< "$( dig "$domain" | awk -F '\t' -v domain="^$domain" '$1 ~ domain {print $4, $5}' )"
+    echo "The subdomain $sub is a $record record and points to $dest"
+}
+if [ "$#" -eq 2 ]
+then
+    subdomain_info "$1" "$2"
+else
+    sub_domains=("www" "lb-01" "web-01" "web-02")
+    for i in "${sub_domains[@]}"
+    do
+        subdomain_info "$1" "$i"
+    done
+fi
+# The subdomain [SUB_DOMAIN] is a [RECORD_TYPE] record and points to [DESTINATION]

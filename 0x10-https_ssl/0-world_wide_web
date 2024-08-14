@@ -4,7 +4,7 @@ subdomain_info ()
 {
     domain="$2.$1"
     sub="$2"
-    read -r record dest <<< "$( dig "$domain" | awk -F '\t' -v domain="^$domain" '$1 ~ domain {print $4, $5}' )"
+    read -r record dest <<< "$( dig "$domain" | awk -F '[ \t]+' -v domain="^$domain" '$1 ~ domain {print $4, $5}' )"
     echo "The subdomain $sub is a $record record and points to $dest"
 }
 if [ "$#" -eq 2 ]

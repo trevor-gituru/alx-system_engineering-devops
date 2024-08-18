@@ -51,6 +51,7 @@ frontend www-https
 # Backend configuration
 backend www-backend
 	redirect scheme https if !{ ssl_fc }
+	balance roundrobin
 	server 499235-web-01 52.2.61.165:80 check
 	server 499235-web-02 54.237.24.148:80 check
 

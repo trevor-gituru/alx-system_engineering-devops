@@ -15,6 +15,7 @@
 ### Web Stack
 - 0x0C. Web server(**Left with 1 advanced tasks, 5**)
 - 0x0F. Load balancer(**Left with 1 advanced tasks, 2**)
+- 0x10. HTTPS SSL(**Left with 1 advanced tasks, 2**)
 
 ### Security
 - 0x0B. SSH(**Left with 1 advanced tasks, 4**)
@@ -23,6 +24,7 @@
 ### Web Stack Debugging
 - 0x0D. Web stack debugging #0(**Finished all tasks, 1 mandatory tasks**)
 - 0x0E. Web stack debugging #1(**Left with 1 advanced tasks, 1**))
+
 ## Requirements
 ### Bash 
 - Allowed editors: `vi`, `vim`, `emacs`

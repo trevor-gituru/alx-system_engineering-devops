@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Task 0
+sudo apt-get install -y ufw
+sudo ufw app list
+sudo ufw allow OpenSSH
+sudo ufw allow 'Nginx HTTP'
+sudo ufw allow 'Nginx HTTPS'

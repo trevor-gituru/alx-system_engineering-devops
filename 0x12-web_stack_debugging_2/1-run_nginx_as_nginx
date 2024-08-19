@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Task 1
+sed -i "s/80 default_/8080 default_/" /etc/nginx/sites-enabled/default
+chmod 644 /etc/nginx/nginx.conf
+sudo -u nginx service nginx start

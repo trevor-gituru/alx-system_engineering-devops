@@ -19,6 +19,8 @@
 
 ### Security
 - 0x0B. SSH(**Left with 1 advanced tasks, 4**)
+- 0x13. Firewall(**Left with 1 advanced tasks, 1**)
+
 ### CI/CD
 - 0x0A. Configuration management(**Finished all tasks, 0-2 mandatory tasks**)
 ### Web Stack Debugging

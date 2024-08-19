@@ -23,7 +23,9 @@
 - 0x0A. Configuration management(**Finished all tasks, 0-2 mandatory tasks**)
 ### Web Stack Debugging
 - 0x0D. Web stack debugging #0(**Finished all tasks, 1 mandatory tasks**)
-- 0x0E. Web stack debugging #1(**Left with 1 advanced tasks, 1**))
+- 0x0E. Web stack debugging #1(**Left with 1 advanced tasks, 1**)
+- 0x12. Web stack debugging #2(**Left with 1 advanced tasks, 2**)
+
 
 ## Requirements
 ### Bash 

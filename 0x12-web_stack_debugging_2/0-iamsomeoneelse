@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Task 0
+su - "$1"
+whoami
+exit

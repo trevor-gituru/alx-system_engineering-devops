@@ -56,7 +56,21 @@ Grants for holberton_user@localhost
 GRANT REPLICATION CLIENT ON *.* TO 'holberton_user'@'localhost'
 ubuntu@229-web-01:~$
 ```
-### 
+### 2. If only you could see what I've seen with your eyes
+In order for you to set up replication, you’ll need to have a database with at least one table and one row in your primary MySQL server (`web-01`) to replicate from.
+
+- Create a database named `tyrell_corp`.
+- Within the `tyrell_corp` database create a table named `nexus6` and add at least one entry to it.
+- Make sure that `holberton_user` has SELECT permissions on your table so that we can check that the table exists and is not empty.
+```bash
+ubuntu@229-web-01:~$  cat 2-create_table.sql | mysql -u root
+id	name
+1	Leon
+2	Leon
+3	Leon
+
+ubuntu@229-web-01:~$
+```
 ### 
 ### 
 ### 

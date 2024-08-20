@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Task 5
+file_name="$(date +%d-%m-%Y).tar.gz"
+mysqldump -u root --password="$1" -A > backup.sql
+tar -c -f $file_name -z backup.sql   

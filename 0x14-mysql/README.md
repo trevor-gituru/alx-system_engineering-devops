@@ -41,7 +41,21 @@ ubuntu@229-web-01:~$ mysql --version
 mysql  Ver 14.14 Distrib 5.7.25, for Linux (x86_64) using  EditLine wrapper
 ubuntu@229-web-01:~$
 ```
-### 
+### 1. Let us in!
+In order for us to verify that your servers are properly configured, we need you to create a user and password for both MySQL databases which will allow the checker access to them.
+
+- Create a MySQL user named `holberton_user` on both `web-01` and `web-02` with the host name set to `localhost` and the password `projectcorrection280hbtn`. This will allow us to access the replication status on both servers.
+- Make sure that `holberton_user` has permission to check the primary/replica status of your databases.
+- In addition to that, Make sure that [task #3](/0x0B-ssh/3-add_ssh_key) of your [SSH project](/0x0B-ssh/) is completed for `web-01` and `web-02`. **You will likely need to add the public key to `web-02` as you only added it to `web-01` for this project.** The checker will connect to your servers to check MySQL status
+
+**Example:**
+```bash
+ubuntu@229-web-01:~$  cat 1-create_user.sql | mysql -u root -p
+Enter password: 
+Grants for holberton_user@localhost
+GRANT REPLICATION CLIENT ON *.* TO 'holberton_user'@'localhost'
+ubuntu@229-web-01:~$
+```
 ### 
 ### 
 ### 

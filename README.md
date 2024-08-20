@@ -16,6 +16,7 @@
 - 0x0C. Web server(**Left with 1 advanced tasks, 5**)
 - 0x0F. Load balancer(**Left with 1 advanced tasks, 2**)
 - 0x10. HTTPS SSL(**Left with 1 advanced tasks, 2**)
+- 0x14. MySQL(**Finished mandatory tasks 0 - 5**)
 
 ### Security
 - 0x0B. SSH(**Left with 1 advanced tasks, 4**)

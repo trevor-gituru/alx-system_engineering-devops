@@ -14,7 +14,6 @@ Example:
     python3 1-export_to_CSV.py 2
     Output file: 2.csv
     Content format:
-    "2","Antonette","False","suscipit repellat esse quibusdam voluptatem incidunt"
     "2","Antonette","True","distinctio vitae autem nihil ut molestias quo"
     ...
 """
@@ -42,5 +41,7 @@ if __name__ == "__main__":
     with open(file_name, mode='w', newline='') as file:
         writer = csv.writer(file, quoting=csv.QUOTE_ALL)
         for task in tasks:
-            data = [employee_id, name, task.get("completed"), task.get("title")]
+            data = [employee_id, name,
+                    task.get("completed"),
+                    task.get("title")]
             writer.writerow(data)

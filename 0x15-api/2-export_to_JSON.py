@@ -49,6 +49,3 @@ if __name__ == "__main__":
                     "username": username}
             user_tasks[employee_id].append(data)
         dump(user_tasks, file)
-
-        
-        

@@ -35,13 +35,13 @@ if __name__ == "__main__":
 
     tasks = task_response.json()
     user = user_response.json()
-    name = user.get("name")
+    username = user.get("username")
 
     # Write data to CSV
     with open(file_name, mode='w', newline='') as file:
         writer = csv.writer(file, quoting=csv.QUOTE_ALL)
         for task in tasks:
-            data = [employee_id, name,
+            data = [employee_id, username,
                     task.get("completed"),
                     task.get("title")]
             writer.writerow(data)

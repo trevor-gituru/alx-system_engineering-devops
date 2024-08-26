@@ -26,6 +26,27 @@ A great API to use for some practice is the Reddit API. There’s a lot of endpo
 - The length of your files will be tested using `wc`
 - All your modules should have a documentation (`python3 -c 'print(__import__("my_module").__doc__)'`)
 - You must use the Requests module for sending HTTP requests to the Reddit API
+
+## Tasks
+### 0. How many subs?
+Write a function that queries the [Reddit API](https://www.reddit.com/dev/api/) and returns the number of subscribers (not active users, total subscribers) for a given subreddit. If an invalid subreddit is given, the function should return 0.
+
+**Hint:** No authentication is necessary for most features of the Reddit API. If you’re getting errors related to Too Many Requests, ensure you’re setting a custom User-Agent.
+
+**Requirements:**
+
+- Prototype: **def number_of_subscribers(subreddit)**
+- If not a valid subreddit, return 0.
+- NOTE: Invalid subreddits may return a redirect to search results. Ensure that you are not following redirects.
+```bash
+wintermancer@lapbox ~/reddit_api/project $ python3 0-main.py programming
+756024
+wintermancer@lapbox ~/reddit_api/project $ python3 0-main.py this_is_a_fake_subreddit
+0
+```
+### 
+### 
+### 
 ## Resources
 - [Reddit API Documentation](https://www.reddit.com/dev/api/)
 - [Query String](https://en.wikipedia.org/wiki/Query_string)

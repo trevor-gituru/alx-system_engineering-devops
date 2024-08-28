@@ -44,7 +44,7 @@ wintermancer@lapbox ~/reddit_api/project $ python3 0-main.py programming
 wintermancer@lapbox ~/reddit_api/project $ python3 0-main.py this_is_a_fake_subreddit
 0
 ```
-### 
+### 1. Top Ten 
 ### 
 ### 
 ## Resources

@@ -3,7 +3,7 @@
 Query Reddit API for number of subscribers for a given subreddit
 """
 from json import loads
-from requests import get
+import requests
 import sys
 
 
@@ -14,11 +14,13 @@ def number_of_subscribers(subreddit):
     """
     url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
     headers = {
-        'User-Agent':
-        'Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) \
-        Gecko/20100401 Firefox/3.6.3 (FM Scene 4.6.1)'
+        "User-Agent": "linux:0x16.api.advanced:v1.0.0 (by /u/bdov_)"
     }
-    response = get(url, headers=headers)
+    params = {
+        "limit": 2
+    }
+    response = requests.get(url, headers=headers, params=params,
+                            allow_redirects=False)
     reddits = response.json()
 
     try:
@@ -26,9 +28,3 @@ def number_of_subscribers(subreddit):
         return int(subscribers)
     except:
         return 0
-    
-if __name__ == '__main__':
-    if len(sys.argv) < 2:
-        print("Please pass an argument for the subreddit to search.")
-    else:
-        print("{:d}".format(number_of_subscribers(sys.argv[1])))
